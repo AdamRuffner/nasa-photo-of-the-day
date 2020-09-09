@@ -37,7 +37,7 @@ useEffect(() => {
       </div>
       <div className = 'info-container'>
           <p>{explanation}</p>
-          <p><b>Copyright</b> {copyright}</p>
+          <p><b> © Copyright:</b> {copyright}</p>
       </div>
       
      
