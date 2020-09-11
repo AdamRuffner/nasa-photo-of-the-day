@@ -2,7 +2,12 @@ import React, { useState, useEffect } from "react";
 import "./App.css";
 import axios from 'axios'
 import { API_KEY , BASE_URL} from './index'
-import Photo from './components/photo'
+import Photo from './components/Photo'
+import Copyright from './components/Copyright'
+import Title from './components/Title'
+import styled, { keyframes } from 'styled-components'
+
+
 
 
 function App() {
@@ -28,16 +33,17 @@ useEffect(() => {
 
   return (
     <div className="App">
-      <div className = 'title-container'>
+      {/* <div className = 'title-container'>
         <h1>NASA Photo of the Day</h1>
         <h2>{title}</h2>
-      </div>
+      </div> */}
+      <Title title = {title} />
       <div className = 'photo-container'>
-          <Photo url = {photoURL} />
+        <Photo url = {photoURL} />
       </div>
       <div className = 'info-container'>
-          <p>{explanation}</p>
-          <p><b> © Copyright:</b> {copyright}</p>
+        <p>{explanation}</p>
+        <Copyright copyright = {copyright} />
       </div>
       
      
