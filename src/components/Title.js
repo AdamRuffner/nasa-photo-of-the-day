@@ -1,10 +1,16 @@
 import React, { useState, useEffect } from "react";
 import styled, { keyframes } from 'styled-components'
 
+
 const StyledTitle = styled.div`
-background-color: red;
-    h2{
+
+    h1{
         font-size: 5rem;
+        color: white;
+    }
+    h2{
+        font-size: 2rem;
+        color: white;
     }
 `
 

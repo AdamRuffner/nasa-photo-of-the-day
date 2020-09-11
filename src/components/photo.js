@@ -3,7 +3,7 @@ import axios from 'axios'
 import styled, { keyframes } from 'styled-components'
 
 const StyledPhoto = styled.img`
-     width: 50%;
+     width: 80%;
 `
 
 
